@@ -1,0 +1,148 @@
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  /* Logo */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .nav-logo img {
+    width: 110px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Menu */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-right: 150px;
+    position: relative;
+    font-size: 20px; 
+  }
+  
+  .nav-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+  }
+  
+  .nav-menu li a:hover {
+    color: black;
+  }
+  
+  .nav-menu li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+  }
+  
+  .nav-menu li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Submenu */
+  .sub-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .has-submenu:hover .sub-menu {
+    display: block;
+  }
+  
+  .sub-menu li {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .sub-menu li a {
+    color: #333333;
+  }
+  
+  .sub-menu li a:hover {
+    color: black;
+  }
+  
+  /* Login & Cart */
+  .nav-login-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-login-cart button {
+    padding: 15px 20px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 100px;
+    font-family: 30px ;
+    border-radius: 25px;
+  }
+  
+  .nav-login-cart button:hover {
+    background-color: gray;
+    font-weight: 22px;
+  }
+  
+  .nav-login-cart img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    margin-right: 50px;
+  }
+  
+  .nav-cart-count {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+  }
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: ffffff;
+    padding: 10px;
+  }

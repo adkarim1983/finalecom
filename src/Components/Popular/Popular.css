@@ -1,0 +1,35 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer horizontalement */
+    justify-content: center; /* Centrer verticalement */
+    height: 10vh; /* Ajuster la hauteur selon vos besoins */
+  }
+  
+  .popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+  }
+  
+  .popular-item {
+    display: flex;
+    gap: 20px; /* Espace entre les images */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+  }
+  
+  .item img {
+    width: 280px; /* Ajuster la largeur des images */
+    height: 40vh;
+    border: 4px solid black;
+    /* Autres styles pour votre image */
+  }
+  
